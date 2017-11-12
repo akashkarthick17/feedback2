@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cos-multipart">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/plugins/cos-multipart.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

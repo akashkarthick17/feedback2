@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="c3p0-0.9.5.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/plugins/c3p0-0.9.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/plugins/c3p0-oracle-thin-extras-0.9.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/plugins/javax.servlet.jsp.jstl-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/plugins/javax.servlet.jsp.jstl-api-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/plugins/mchange-commons-java-0.2.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/plugins/mysql-connector-java-5.1.43-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

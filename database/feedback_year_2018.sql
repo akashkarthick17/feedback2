@@ -1,0 +1,57 @@
+-- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
+--
+-- Host: 127.0.0.1    Database: feedback
+-- ------------------------------------------------------
+-- Server version	5.7.19
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `year_2018`
+--
+
+DROP TABLE IF EXISTS `year_2018`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `year_2018` (
+  `degree` varchar(25) DEFAULT NULL,
+  `branch` varchar(25) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `s_section` varchar(25) DEFAULT NULL,
+  `subject_code` varchar(25) DEFAULT NULL,
+  `staff_name` varchar(225) DEFAULT NULL,
+  `subject_name` varchar(225) DEFAULT NULL,
+  `s_year` varchar(25) DEFAULT NULL,
+  `sem_type` varchar(25) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `year_2018`
+--
+
+LOCK TABLES `year_2018` WRITE;
+/*!40000 ALTER TABLE `year_2018` DISABLE KEYS */;
+INSERT INTO `year_2018` VALUES ('UG','CSE',7,'A','CS6501','STAFF1','SUBJECT1','2018','odd'),('UG','ECE',7,'B','CS6502','STAFF2','SUBJECT2','2018','odd'),('UG','EEE',7,'A','CS6503','STAFF3','SUBJECT3','2018','odd'),('UG','EIE',7,'B','CS6504','STAFF4','SUBJECT4','2018','odd'),('UG','IT',7,'A','CS6505','STAFF5','SUBJECT5','2018','odd'),('UG','CSE',7,'B','CS6506','STAFF6','SUBJECT6','2018','odd'),('UG','ECE',7,'A','CS6507','STAFF7','SUBJECT7','2018','odd'),('UG','EEE',7,'B','CS6508','STAFF8','SUBJECT8','2018','odd'),('UG','EIE',7,'A','CS6509','STAFF9','SUBJECT9','2018','odd'),('UG','IT',7,'B','CS6510','STAFF10','SUBJECT10','2018','odd'),('UG','CSE',7,'A','CS6511','STAFF11','SUBJECT11','2018','odd'),('UG','ECE',7,'B','CS6512','STAFF12','SUBJECT12','2018','odd'),('UG','EEE',7,'A','CS6513','STAFF13','SUBJECT13','2018','odd'),('UG','EIE',7,'B','CS6514','STAFF14','SUBJECT14','2018','odd'),('UG','IT',7,'A','CS6515','STAFF15','SUBJECT15','2018','odd'),('UG','CSE',7,'B','CS6516','STAFF16','SUBJECT16','2018','odd'),('UG','ECE',7,'A','CS6517','STAFF17','SUBJECT17','2018','odd'),('UG','EEE',7,'B','CS6518','STAFF18','SUBJECT18','2018','odd'),('UG','EIE',7,'A','CS6519','STAFF19','SUBJECT19','2018','odd');
+/*!40000 ALTER TABLE `year_2018` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-09-18 14:10:16
