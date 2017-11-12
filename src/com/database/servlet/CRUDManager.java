@@ -4,7 +4,7 @@ import com.list.servlet.*;
 import org.openxmlformats.schemas.drawingml.x2006.main.STAdjCoordinate;
 
 import javax.naming.NamingException;
-import javax.sql.DataSource;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class CRUDManager {
 
-    private static DataSource dataSource;
+
 
     public static void create(int year){
 
@@ -24,14 +24,12 @@ public class CRUDManager {
         ResultSet resultSet = null;
 
 
-       dataSource = DBConnection.ConnectDatabase();
-       
-       
+     
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
             String sql = "CREATE  TABLE YEAR_"+year+"(degree VARCHAR(25), branch VARCHAR(25),semester int,s_section VARCHAR(25),subject_code VARCHAR(25), staff_name VARCHAR(225),subject_name VARCHAR(225), s_year VARCHAR(25), sem_type VARCHAR(25))";
             statement = connection.createStatement();
             statement.executeUpdate(sql);
@@ -75,12 +73,12 @@ public class CRUDManager {
         List<Year> listYear = new ArrayList<>();
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection = DBConnection.database();
+            connection = DBConnection.ConnectToDatabase();
             String sql = "SELECT YEAR FROM TABLE_MAP";
             statement = connection.createStatement();
             resultSet = statement.executeQuery(sql);
@@ -123,12 +121,12 @@ public class CRUDManager {
         ResultSet resultSet = null;
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection = DBConnection.database();
+            connection = DBConnection.ConnectToDatabase();
             String sql = "DROP TABLE year_"+year;
             statement = connection.createStatement();
             statement.executeUpdate(sql);
@@ -192,12 +190,12 @@ public static void insert(List<CreateYear> createYear, String  yr){
     ResultSet resultSet = null;
 
 
-    dataSource = DBConnection.ConnectDatabase();
+    // dataSource = DBConnection.ConnectDatabase();
 
     try {
 
 
-        connection = DBConnection.database();
+        connection = DBConnection.ConnectToDatabase();
 
 
         for(CreateYear list: createYear){
@@ -250,13 +248,13 @@ public static void publish(String pYear, String pSem)
     ResultSet resultSet = null;
 
 
-    dataSource = DBConnection.ConnectDatabase();
+    // dataSource = DBConnection.ConnectDatabase();
 
     try {
 
 
         String sql="";
-        connection =DBConnection.database();
+        connection =DBConnection.ConnectToDatabase();
 
         //truncate existing active link
         sql = "TRUNCATE TABLE active_link";
@@ -349,12 +347,12 @@ public static boolean checkActiveLink(){
     ResultSet resultSet = null;
 
 
-    dataSource = DBConnection.ConnectDatabase();
+    // dataSource = DBConnection.ConnectDatabase();
 
     try {
 
 
-        connection =DBConnection.database();
+        connection =DBConnection.ConnectToDatabase();
         String sql = "SELECT * FROM active_link LIMIT 1";
         statement = connection.createStatement();
         resultSet = statement.executeQuery(sql);
@@ -404,12 +402,12 @@ public static String[] getActiveYear(){
 
 
     String[] array = new String[2];
-    dataSource = DBConnection.ConnectDatabase();
+    // dataSource = DBConnection.ConnectDatabase();
 
     try {
 
 
-        connection =DBConnection.database();
+        connection =DBConnection.ConnectToDatabase();
         String sql = "SELECT * FROM active_link LIMIT 1";
         statement = connection.createStatement();
         resultSet = statement.executeQuery(sql);
@@ -459,12 +457,12 @@ public static List<Staff> getStaffDetails(String dept, String sem, String sec){
     List<Staff> staff = new ArrayList<>();
 
     String activeYear="";
-    dataSource = DBConnection.ConnectDatabase();
+    // dataSource = DBConnection.ConnectDatabase();
 
     try {
 
 
-        connection =DBConnection.database();
+        connection =DBConnection.ConnectToDatabase();
         String sql = "SELECT * FROM active_link LIMIT 1";
         statement = connection.createStatement();
         resultSet = statement.executeQuery(sql);
@@ -526,14 +524,14 @@ public static List<Staff> getStaffDetails(String dept, String sem, String sec){
         List<Staff> staff = new ArrayList<>();
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
             String sql;
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
 
             sql = "SELECT * FROM year_"+year+" WHERE branch='"+dept+"' AND semester = "+sem+" AND s_section = '"+sec+"' ";
             statement = connection.createStatement();
@@ -587,12 +585,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
      int count=0;
      List<FeedbackQuestion> fbList = new ArrayList<>();
 
-    dataSource = DBConnection.ConnectDatabase();
+    // dataSource = DBConnection.ConnectDatabase();
 
     try {
 
 
-        connection =DBConnection.database();
+        connection =DBConnection.ConnectToDatabase();
         String sql = "SELECT * FROM feedback_questions";
         statement = connection.createStatement();
         resultSet = statement.executeQuery(sql);
@@ -647,12 +645,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
         int count=0;
         List<SurveyQuestion> surveyList = new ArrayList<>();
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
             String sql = "SELECT * FROM survey_questions";
             statement = connection.createStatement();
             resultSet = statement.executeQuery(sql);
@@ -713,12 +711,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
             String active_sem="";
 
 
-              dataSource = DBConnection.ConnectDatabase();
+              // dataSource = DBConnection.ConnectDatabase();
 
             try {
 
 
-                connection =DBConnection.database();
+                connection =DBConnection.ConnectToDatabase();
                 String sql = "SELECT * FROM active_link LIMIT 1";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
@@ -791,12 +789,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
         String active_sem="";
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
             String sql = "SELECT * FROM active_link LIMIT 1";
             statement = connection.createStatement();
             resultSet = statement.executeQuery(sql);
@@ -862,7 +860,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
         List<Rating> ratingList = new ArrayList<>();
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
 
         try {
@@ -870,7 +868,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
             String sql="";
 
             int size = getFeedbackSize(year,sem);
@@ -1010,7 +1008,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
         List<Rating> ratingList = new ArrayList<>();
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
 
         try {
@@ -1018,7 +1016,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
             String sql="";
 
             int size = getSurveySize(year,sem);
@@ -1159,12 +1157,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
         int count=0;
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
             String sql = "SELECT feedback FROM reports_meta WHERE year="+year+" AND sem='"+sem+"'";
             statement = connection.createStatement();
             resultSet = statement.executeQuery(sql);
@@ -1212,12 +1210,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
         int count=0;
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
             String sql = "SELECT survey FROM reports_meta WHERE year="+year+" AND sem='"+sem+"'";
             statement = connection.createStatement();
             resultSet = statement.executeQuery(sql);
@@ -1262,12 +1260,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
         ResultSet resultSet = null;
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
 
 
 
@@ -1309,12 +1307,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
         ResultSet resultSet = null;
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
 
 
 
@@ -1359,12 +1357,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
         ResultSet resultSet = null;
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
 
 
 
@@ -1409,12 +1407,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
         ResultSet resultSet = null;
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
 
 
 
@@ -1456,12 +1454,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
         ResultSet resultSet = null;
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
 
 
 
@@ -1506,12 +1504,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
         ResultSet resultSet = null;
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
 
 
 
@@ -1557,12 +1555,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
         ResultSet resultSet = null;
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
 
 
 
@@ -1609,12 +1607,12 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
         ResultSet resultSet = null;
 
 
-        dataSource = DBConnection.ConnectDatabase();
+        // dataSource = DBConnection.ConnectDatabase();
 
         try {
 
 
-            connection =DBConnection.database();
+            connection =DBConnection.ConnectToDatabase();
 
 
 
@@ -1666,12 +1664,12 @@ public static List<StudentsList> retrieveStudents(){
 
     List<StudentsList> student = new ArrayList<>();
 
-    dataSource = DBConnection.ConnectDatabase();
+    // dataSource = DBConnection.ConnectDatabase();
 
     try {
 
 
-        connection =DBConnection.database();
+        connection =DBConnection.ConnectToDatabase();
 
 
 

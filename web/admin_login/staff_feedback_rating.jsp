@@ -37,38 +37,38 @@
     String sem = request.getParameter("sem");
 
 
-    out.print(year);
-    out.print("<br>");
-
-    out.print(subcode);
-    out.print("<br>");
-    out.print(subname);
-    out.print("<br>");
-    out.print(staffname);
-    out.print("<br>");
-    out.print(sem);
-    out.print("<br>");
+//    out.print(year);
+//    out.print("<br>");
+//
+//    out.print(subcode);
+//    out.print("<br>");
+//    out.print(subname);
+//    out.print("<br>");
+//    out.print(staffname);
+//    out.print("<br>");
+//    out.print(sem);
+//    out.print("<br>");
 
 
     List<Rating> ratingList = CRUDManager.getFeedbackRating(year,sem,staffname,subcode,subname);
 
 
-
-    if(ratingList.isEmpty()){
-
-        out.print("the list is empty");
-    }
-    else{
-
-
-        out.print("the list is not empty");
-    }
-
-
-    for(Rating r : ratingList){
-
-        out.print("Question--> "+r.getQuestion());
-    }
+//
+//    if(ratingList.isEmpty()){
+//
+//        out.print("the list is empty");
+//    }
+//    else{
+//
+//
+//        out.print("the list is not empty");
+//    }
+//
+//
+//    for(Rating r : ratingList){
+//
+//        out.print("Question--> "+r.getQuestion());
+//    }
 
     request.setAttribute("SpecificStaffDetails",ratingList);
 
@@ -274,6 +274,19 @@
                         </tr>
                         </thead>
                         <tbody>
+                        <tr>
+
+
+                        <td style="font-size: large; font-weight: 600"><%= subcode %></td>
+                        <td style="font-size: large; font-weight: 600"><%= subname%></td>
+                        <td style="font-size: large; font-weight: 600"><%= staffname%></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
 
 
                         <%
