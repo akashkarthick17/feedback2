@@ -280,7 +280,7 @@
                         <tr>
 
                             <%
-                            List<Rating> ratingList = CRUDManager.getFeedbackRating(year,Integer.toString(sem),staff.get(i-1).getStaffName(),staff.get(i-1).getSubjectCode(),staff.get(i-1).getSubjectCode());
+                            List<Rating> ratingList = CRUDManager.getFeedbackRating(year,""+sem,staff.get(i-1).getStaffName(),staff.get(i-1).getSubjectCode(),staff.get(i-1).getSubjectCode());
 
                                 double ii=0.0;
 
@@ -291,7 +291,7 @@
 
                                 }
 
-                               double res = ii/ratingList.size();
+                               double res = ii;
 
 
 
