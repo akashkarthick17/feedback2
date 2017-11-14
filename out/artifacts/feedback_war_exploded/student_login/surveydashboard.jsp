@@ -125,29 +125,32 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Survey
+                Feedback
             </h1>
 
         </section>
 
         <!-- Main content -->
+
         <section class="content">
             <div class="col-md-12">
                 <div class="box box-default">
-                    <div class="box-header with-border">
-                        <i class="fa fa-sticky-note"></i>
 
-                        <h3 class="box-title text-red">To be Noted</h3>
-                    </div>
                     <!-- /.box-header -->
-                    <div class="box-body">
-                        <ol  class="first">
-                            <li>The Student&rsquo;s identification is not stored.</li>
-                            <li>Once you click <code>PROCEED</code> button, you will be prompted to a window where you need to select the department, semester and section and then click<code > NEXT</code>. </li>
-                            <li>A window will appear which contains the staff name and their respective subject (based on the department, semester and section you have selected), you need to verify the detail and click <code >READY</code>, which take you to the <code>SURVEY FORM</code>.</li>
-                            <li>The form contains 10 questions, student need to select their opinion (as <span style="color: #008000;">Strongly Agree</span>, <span style="color: #008000;">Agree</span>, <span style="color: #008000;">Neutral</span>, <span style="color: #008000;">Disagree</span>, <span style="color: #008000;">Strongly Disagree</span>) about each staff for all the 10 questions.</li>
-                            <li>Click <code>CONFIRM</code> to submit your Survey.</li>
-                        </ol>
+                    <div class="box-body text-center" style="font-weight: 900; font-size: larger">
+
+                        <br>
+
+                        <br>
+                        <br>
+                        <br>
+                        Thank You for taking up the Feedback
+
+                        <br>
+
+                        <br>
+                        <br>
+                        <br>
                     </div>
                     <!-- /.box-body -->
                 </div>
@@ -155,16 +158,29 @@
             </div>
             <!-- /.col -->
 
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+
+            <br>
+            <br>
+
 
 
             <form action="survey.jsp" method="post">
 
-                <input type="submit" class="btn btn-info btn-primary center-block">
+                <input type="submit" value="Continue to Survey" class="btn btn-info btn-primary center-block">
             </form>
 
 
 
         </section>
+
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->

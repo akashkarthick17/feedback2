@@ -201,10 +201,11 @@
                             <th >Subject Name</th>
                         </tr>
 
+                        <% int i=1; %>
 
                         <c:forEach var="staff" items="${staffDetails}">
 
-                            <% int i=1; %>
+
 
                         <tr>
                             <td><%= i %>.</td>
@@ -215,7 +216,7 @@
                             <td>${staff.subjectName}</td>
                         </tr>
 
-                            <% ++i; %>
+                            <% i=i+1; %>
 
                         </c:forEach>
 

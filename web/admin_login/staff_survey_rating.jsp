@@ -2,6 +2,7 @@
 <%@ page import="com.database.servlet.CRUDManager" %>
 <%@ page import="com.list.servlet.Rating" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.text.DecimalFormat" %>
 
 <%
 
@@ -37,10 +38,13 @@
     String staffname = request.getParameter("staffname");
 
 
-    String sem = request.getParameter("sem");
+    String semester = request.getParameter("semester");
+    int sem = Integer.parseInt(request.getParameter("sem"));
+    String dept = request.getParameter("dept");
+    String sec = request.getParameter("sec");
 
 
-    List<Rating> ratingList = CRUDManager.getSurveyRating(year,sem,staffname,subcode,subname);
+    List<Rating> ratingList = CRUDManager.getSurveyRating(year,semester,staffname,subcode,subname,sem,dept,sec);
 
 %>
 
@@ -247,6 +251,9 @@
 
                             double i=0.0;
 
+
+                            DecimalFormat f = new DecimalFormat("##.00");
+
                             for(Rating r : ratingList){
 
 
@@ -262,7 +269,7 @@
                             <td><%= r.getD() %>    </td>
                             <td><%= r.getSd() %>    </td>
                             <td><%= r.getTotal() %>    </td>
-                            <td><%= r.getRating() %>    </td>
+                            <td><%= f.format(r.getRating()) %>    </td>
 
                         </tr>
                         <%
@@ -285,7 +292,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td style="font-weight: 600;"><%= i/ratingList.size()  %> </td>
+                            <td style="font-weight: 600;"><%= f.format(i/ratingList.size())  %> </td>
 
 
 

@@ -141,7 +141,8 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Feedback
+                Survey
+
             </h1>
 
         </section>
@@ -152,14 +153,38 @@
                 <div class="box box-default">
 
                     <!-- /.box-header -->
-                    <div class="box-body text-center" style="font-weight: 600; font-size: larger">
-                       Thank You for taking up the Feedback
+                    <div class="box-body text-center" style="font-weight: 900; font-size: larger">
+
+                        <br>
+
+                        <br>
+                        <br>
+                        <br>
+                        Thank You for taking up the Survey
+
+                        <br>
+
+                        <br>
+                        <br>
+                        <br>
                     </div>
                     <!-- /.box-body -->
                 </div>
                 <!-- /.box -->
             </div>
             <!-- /.col -->
+
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+
+            <br>
+            <br>
 
 
 

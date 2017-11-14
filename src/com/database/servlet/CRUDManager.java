@@ -269,11 +269,11 @@ public static void publish(String pYear, String pSem)
 
         if(!pYear.isEmpty()  && !pSem.isEmpty()) {
 
-            sql = "CREATE  TABLE IF NOT EXISTS fr_" + pYear + "_" + pSem + "(staff_name VARCHAR(45), subject_code VARCHAR(45), sub_name VARCHAR(25), question_no int, question LONGTEXT , rating int)";
+            sql = "CREATE  TABLE IF NOT EXISTS fr_" + pYear + "_" + pSem + "(staff_name VARCHAR(225), subject_code VARCHAR(45), sub_name VARCHAR(225),sem INT, branch VARCHAR(255), sec VARCHAR(25), question_no int, question LONGTEXT , rating int)";
             statement = connection.createStatement();
             statement.executeUpdate(sql);
 
-            sql = "CREATE TABLE IF NOT EXISTS sr_" + pYear + "_" + pSem + "(staff_name VARCHAR(45), subject_code  VARCHAR(45),sub_name VARCHAR(25), question_no int, question LONGTEXT ,rating int)";
+            sql = "CREATE TABLE IF NOT EXISTS sr_" + pYear + "_" + pSem + "(staff_name VARCHAR(225), subject_code  VARCHAR(45),sub_name VARCHAR(225), sem INT, branch VARCHAR(255), sec VARCHAR(25), question_no int, question LONGTEXT ,rating int)";
             statement = connection.createStatement();
             statement.executeUpdate(sql);
 
@@ -694,7 +694,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
     }
 
-    public static  void feedbackLog(List<Integer> rating,List<FeedbackQuestion> feedbackQuestions, Staff s){
+    public static  void feedbackLog(List<Integer> rating,List<FeedbackQuestion> feedbackQuestions, Staff s, int sem, String branch, String sec){
 
 
         System.out.println("feedback log");
@@ -734,14 +734,17 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
                     FeedbackQuestion f= feedbackQuestions.get(temp);
 
-                    sql = "INSERT INTO  fr_" + active_year + "_" + active_sem + "  VALUES(?,?,?,?,?,?) ";
+                    sql = "INSERT INTO  fr_" + active_year + "_" + active_sem + "  VALUES(?,?,?,?,?,?,?,?,?) ";
                     preparedStatement = connection.prepareStatement(sql);
                     preparedStatement.setString(1,staffName);
                     preparedStatement.setString(2,subCode);
                     preparedStatement.setString(3,subName);
-                    preparedStatement.setInt(4,f.getQno());
-                    preparedStatement.setString(5,f.getQuestion());
-                    preparedStatement.setInt(6,rating.get(temp));
+                    preparedStatement.setInt(4,sem);
+                    preparedStatement.setString(5,branch);
+                    preparedStatement.setString(6,sec);
+                    preparedStatement.setInt(7,f.getQno());
+                    preparedStatement.setString(8,f.getQuestion());
+                    preparedStatement.setInt(9,rating.get(temp));
 
                     preparedStatement.executeUpdate();
 
@@ -772,7 +775,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
         }
 
 
-    public static  void surveyLog(List<Integer> rating,List<SurveyQuestion> surveyQuestions, Staff s){
+    public static  void surveyLog(List<Integer> rating,List<SurveyQuestion> surveyQuestions, Staff s,int sem, String branch, String sec ){
 
 
         System.out.println("survey log");
@@ -812,14 +815,17 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
                 SurveyQuestion f= surveyQuestions.get(temp);
 
-                sql = "INSERT INTO  sr_" + active_year + "_" + active_sem + "  VALUES(?,?,?,?,?,?) ";
+                sql = "INSERT INTO  sr_" + active_year + "_" + active_sem + "  VALUES(?,?,?,?,?,?,?,?,?) ";
                 preparedStatement = connection.prepareStatement(sql);
                 preparedStatement.setString(1,staffName);
                 preparedStatement.setString(2,subCode);
                 preparedStatement.setString(3,subName);
-                preparedStatement.setInt(4,f.getQno());
-                preparedStatement.setString(5,f.getQuestion());
-                preparedStatement.setInt(6,rating.get(temp));
+                preparedStatement.setInt(4,sem);
+                preparedStatement.setString(5,branch);
+                preparedStatement.setString(6,sec);
+                preparedStatement.setInt(7,f.getQno());
+                preparedStatement.setString(8,f.getQuestion());
+                preparedStatement.setInt(9,rating.get(temp));
 
                 preparedStatement.executeUpdate();
 
@@ -849,7 +855,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
     }
 
-    public static List<Rating> getFeedbackRating(int year, String sem, String staffName, String subCode, String subName){
+    public static List<Rating> getFeedbackRating(int year, String sem, String staffName, String subCode, String subName, int sem_c, String branch, String section){
 
 
         Connection connection =null;
@@ -882,7 +888,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
 
                 //get Question
-                sql = "SELECT question FROM fr_" + year + "_" + sem + " WHERE staff_name='"+staffName+"' AND  subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" LIMIT 1";
+                sql = "SELECT question FROM fr_" + year + "_" + sem + " WHERE staff_name='"+staffName+"' AND  subject_code='" + subCode + "' AND sub_name='" + subName + "' AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"' AND question_no = "+i+" LIMIT 1";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 
@@ -897,7 +903,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
 
                 //Strongly argee
-                sql = "SELECT COUNT(*) FROM fr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" and rating=5";
+                sql = "SELECT COUNT(*) FROM fr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"' AND question_no = "+i+" and rating=5";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 
@@ -908,7 +914,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
                 //agree
 
-                sql = "SELECT COUNT(*) FROM fr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" and rating=4";
+                sql = "SELECT COUNT(*) FROM fr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"' AND question_no = "+i+" and rating=4";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 
@@ -920,7 +926,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
                 //neutral
 
-                sql = "SELECT COUNT(*) FROM fr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" and rating=3";
+                sql = "SELECT COUNT(*) FROM fr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"' AND question_no = "+i+" and rating=3";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 
@@ -931,7 +937,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
                 //disagree
 
-                sql = "SELECT COUNT(*) FROM fr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" and rating=2";
+                sql = "SELECT COUNT(*) FROM fr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"' AND question_no = "+i+" and rating=2";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 
@@ -943,7 +949,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
                 //strongly disagree
 
-                sql = "SELECT COUNT(*) FROM fr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" and rating=1";
+                sql = "SELECT COUNT(*) FROM fr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"' AND question_no = "+i+" and rating=1";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 
@@ -997,7 +1003,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
     }
 
-    public static List<Rating> getSurveyRating(int year, String sem, String staffName, String subCode, String subName){
+    public static List<Rating> getSurveyRating(int year, String sem, String staffName, String subCode, String subName, int sem_c, String branch, String section){
 
 
         Connection connection =null;
@@ -1029,7 +1035,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
 
                 //get Question
-                sql = "SELECT question FROM sr_" + year + "_" + sem + " WHERE staff_name='"+staffName+"' AND  subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" LIMIT 1";
+                sql = "SELECT question FROM sr_" + year + "_" + sem + " WHERE staff_name='"+staffName+"' AND  subject_code='" + subCode + "' AND sub_name='" + subName + "'  AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"'  AND question_no = "+i+" LIMIT 1";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 
@@ -1044,7 +1050,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
 
                 //Strongly argee
-                sql = "SELECT COUNT(*) FROM sr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" and rating=5";
+                sql = "SELECT COUNT(*) FROM sr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "'  AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"'  AND question_no = "+i+" and rating=5";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 
@@ -1055,7 +1061,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
                 //agree
 
-                sql = "SELECT COUNT(*) FROM sr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" and rating=4";
+                sql = "SELECT COUNT(*) FROM sr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "'  AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"'  AND question_no = "+i+" and rating=4";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 
@@ -1067,7 +1073,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
                 //neutral
 
-                sql = "SELECT COUNT(*) FROM sr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" and rating=3";
+                sql = "SELECT COUNT(*) FROM sr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "'  AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"'  AND question_no = "+i+" and rating=3";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 
@@ -1078,7 +1084,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
                 //disagree
 
-                sql = "SELECT COUNT(*) FROM sr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" and rating=2";
+                sql = "SELECT COUNT(*) FROM sr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "'  AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"'  AND question_no = "+i+" and rating=2";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 
@@ -1090,7 +1096,7 @@ public static List<FeedbackQuestion> getFeedbackQuestion(){
 
                 //strongly disagree
 
-                sql = "SELECT COUNT(*) FROM sr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "' AND question_no = "+i+" and rating=1";
+                sql = "SELECT COUNT(*) FROM sr_" + year + "_" + sem + " WHERE staff_name='" + staffName + "' AND subject_code='" + subCode + "' AND sub_name='" + subName + "'  AND sem="+sem_c+" AND branch = '"+branch+"' AND sec = '"+section+"'  AND question_no = "+i+" and rating=1";
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sql);
 

@@ -40,7 +40,12 @@
         }
 
 
-        CRUDManager.surveyLog(rating,surveyList,s);
+
+        int currentSem =Integer.parseInt(session.getAttribute("semester").toString());
+        String currentDept = (String) session.getAttribute("department");
+        String currentSec = (String) session.getAttribute("section");
+
+        CRUDManager.surveyLog(rating,surveyList,s,currentSem,currentDept,currentSec);
 
 
 
@@ -279,7 +284,7 @@
                 document.getElementById("click"+(question+1)).click();
 
 
-            }, 500);
+            }, 200);
 
         }
 

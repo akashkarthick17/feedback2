@@ -41,8 +41,13 @@
                 }
             }
 
+            int currentSem = Integer.parseInt(session.getAttribute("semester").toString());
+            String currentDept = (String) session.getAttribute("department");
+            String currentSec = (String) session.getAttribute("section");
 
-            CRUDManager.feedbackLog(rating,fbList,s);
+
+
+            CRUDManager.feedbackLog(rating,fbList,s, currentSem,currentDept,currentSec);
 
        // }
 
@@ -271,7 +276,7 @@
                 document.getElementById("click"+(question+1)).click();
 
 
-            }, 500);
+            }, 200);
 
 
 
@@ -604,7 +609,7 @@
                         <input type="hidden" name="sCount" value="<%= session.getAttribute("staffCountTrack") %>">
 
                         <%--disabled--%>
-                        <input type="submit" disabled name="ratingsubmit" class="btn btn-info"  id="buttonform">
+                        <input type="submit" value="Submit" disabled name="ratingsubmit" class="btn btn-info"  id="buttonform">
                     </form>
 
                     <!-- /.box -->

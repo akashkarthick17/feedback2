@@ -2,6 +2,8 @@
 <%@ page import="com.list.servlet.Staff" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.database.servlet.CRUDManager" %>
+<%@ page import="com.list.servlet.Rating" %>
+<%@ page import="java.text.DecimalFormat" %>
 
 <%
 
@@ -89,7 +91,7 @@
     <script type="application/javascript">
 
 
-        function fRating(year,sem,staffname, subcode,subname){
+        function fRating(year,semester,staffname, subcode,subname,sem,dept,section){
 
 
 
@@ -100,7 +102,10 @@
             document.getElementById("subname").value=subname;
             document.getElementById("subcode").value=subcode;
             document.getElementById("staffname").value=staffname;
+            document.getElementById("semester").value=semester;
             document.getElementById("sem").value=sem;
+            document.getElementById("dept").value=dept;
+            document.getElementById("sec").value=section;
 
 
             document.getElementById("form").submit();
@@ -253,7 +258,10 @@
                 <input type="hidden" name="subcode" id="subcode">
                 <input type="hidden" name="subname" id="subname">
                 <input type="hidden" name="staffname" id="staffname">
+                <input type="hidden" name="semester" id="semester">
                 <input type="hidden" name="sem" id="sem">
+                <input type="hidden" name="dept" id="dept">
+                <input type="hidden" name="sec" id="sec">
 
             </form>
 
@@ -272,23 +280,61 @@
                             <th>Overall Rating in Percentage</th>
                             <th style="width: 40px">Label</th>
                         </tr>
-                        <% int i=1; %>
+                        <%
+                            int i=1; double ii=0.0; double res=0.0;
+                            DecimalFormat f = new DecimalFormat("##.00");
+
+
+                        %>
                         <C:forEach var="temp" items="${staffDetails}" >
+
+                            <% ii=0.0;res=0.0; %>
                             <tr>
+
+                                <%
+                                    List<Rating> ratingList = CRUDManager.getSurveyRating (year,semester,staff.get(i-1).getStaffName(),staff.get(i-1).getSubjectCode(),staff.get(i-1).getSubjectName(),sem,dept,section);
+
+
+                                    System.out.println("i : "+i);
+
+                                    for(Rating r : ratingList){
+
+
+
+
+                                        ii = ii + r.getRating();
+
+
+                                    }
+
+
+                                    res = ii/ratingList.size();
+
+
+
+
+
+                                %>
+
+
+
+
+
+
                                 <td><%= i %>.</td>
-                                <td><a href="#" onclick="fRating('<%= request.getAttribute("sYear")%>','<%= semester %>','${temp.staffName}','${temp.subjectCode}','${temp.subjectName}')">${temp.staffName}</a></td>
+                                <td><a href="#" onclick="fRating('<%= request.getAttribute("sYear")%>','<%= semester %>','${temp.staffName}','${temp.subjectCode}','${temp.subjectName}',<%= sem %>,'<%= dept %>','<%= section %>')">${temp.staffName}</a></td>
                                 <td>${temp.subjectCode}</td>
                                 <td>${temp.subjectName}</td>
                                 <td>
                                     <div class="progress progress-xs progress-striped active">
-                                        <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                                        <div class="progress-bar progress-bar-success" style="width: <%= res*10 %>%"></div>
                                     </div>
                                 </td>
-                                <td><span class="badge bg-green">90%</span></td>
+                                <td><span class="badge bg-green"><%= f.format(res) %></span></td>
                             </tr>
 
                             <%
-                                ++i;
+                                i=i+1;
                             %>
                         </C:forEach>
 
