@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.itextpdf:font-asian:7.0.3" type="repository">
+    <properties maven-id="com.itextpdf:font-asian:7.0.3" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/lib/font-asian-7.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/lib/slf4j-api-1.7.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -6,13 +6,11 @@
 
 <%
 
-    if(session.getAttribute("user")==null){
+    if (session.getAttribute("user") == null) {
 
         response.sendRedirect("../index.jsp");
 
-    }
-
-    else if(!session.getAttribute("user").equals("admin")){
+    } else if (!session.getAttribute("user").equals("admin")) {
 
         response.sendRedirect("../index.jsp");
 
@@ -27,16 +25,7 @@
     List<StudentsList> student = CRUDManager.retrieveStudents();
 
 
-
-
-
-
-
 %>
-
-
-
-
 
 
 <!DOCTYPE html>
@@ -69,7 +58,6 @@
     <link rel="stylesheet" href="../plugins/Buttons-1.4.0/css/buttons.dataTables.css">
 
 
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -78,7 +66,8 @@
     <![endif]-->
 
     <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -210,13 +199,13 @@
         <section class="content">
 
 
-            <div class="box" >
-                <div class="box-header" >
+            <div class="box">
+                <div class="box-header">
                     <h3 class="box-title">Data Table With Full Features</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                    <table  class="table table-bordered table-striped"  id="example">
+                    <table class="table table-bordered table-striped" id="example">
 
                         <thead>
 
@@ -234,20 +223,25 @@
 
                         <%
 
-                            int i=1;
+                            int i = 1;
 
-                            for(StudentsList s : student){
+                            for (StudentsList s : student) {
 
 
                         %>
 
                         <tr>
 
-                            <td><%= i %></td>
-                            <td><%= s.getReg() %></td>
-                            <td><%= s.getBranch() %></td>
-                            <td><%= s.getSem() %></td>
-                            <td><%= s.getSec() %></td>
+                            <td><%= i %>
+                            </td>
+                            <td><%= s.getReg() %>
+                            </td>
+                            <td><%= s.getBranch() %>
+                            </td>
+                            <td><%= s.getSem() %>
+                            </td>
+                            <td><%= s.getSec() %>
+                            </td>
 
 
                         </tr>
@@ -264,7 +258,6 @@
                 </div>
                 <!-- /.box-body -->
             </div>
-
 
 
         </section>
@@ -301,7 +294,6 @@
 <script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 
 
-
 <script src="js/jquery-1.12.4.js"></script>
 <script src="js/dataTables.buttons.min.js"></script>
 <script src="js/jquery.dataTables.min.js"></script>
@@ -315,51 +307,52 @@
 <script src="../plugins/Buttons-1.4.0/js/buttons.print.js"></script>
 
 
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable(
+            {
+                dom: 'Bfrtip',
+                buttons: [
 
-<script >
-    $(document).ready(function() { $('#example').DataTable(
-        { dom: 'Bfrtip',
-            buttons: [
+                    {
+                        "extend": "copy",
+                        "text": "<i class='fa fa-copy bigger-110 ' style='color: deeppink; font-size: 15px;'></i> <span class='hidden'>Copy to clipboard</span>",
+                        "className": "btn btn-white btn-primary btn-bold"
+                    },
 
-                {
-                    "extend": "copy",
-                    "text": "<i class='fa fa-copy bigger-110 ' style='color: deeppink; font-size: 15px;'></i> <span class='hidden'>Copy to clipboard</span>",
-                    "className": "btn btn-white btn-primary btn-bold"
-                },
+                    {
+                        "extend": "csv",
+                        "text": "<i class='fa fa-database bigger-110 ' style='color: orange; background-color: white; font-size: 15px;'></i> <span class='hidden'>Export to CSV</span>",
+                        "className": "btn btn-white btn-primary btn-bold",
+                        "button": "<i class='btn btn-white btn-primary btn-bold'></i>"
+                    },
+                    {
+                        "extend": "excel",
+                        "text": "<i class='fa fa-file-excel-o bigger-110 ' style='color: darkgreen; font-size: 15px;'></i> <span class='hidden'>Export to Excel</span>",
+                        "className": "btn btn-white btn-primary btn-bold"
+                    },
+                    {
+                        "extend": "pdf",
+                        "text": "<i class='fa fa-file-pdf-o bigger-110 ' style='color: red; font-size: 15px;'></i> <span class='hidden'>Export to PDF</span>",
+                        "className": "btn btn-white btn-primary btn-bold"
+                    },
+                    {
+                        "extend": "print",
+                        "text": "<i class='fa fa-print bigger-110 ' style='color: grey; font-size: 15px;'></i> <span class='hidden'>Print</span>",
+                        "className": "btn btn-white btn-primary btn-bold",
+                        message: 'hello'
 
-                {
-                    "extend": "csv",
-                    "text": "<i class='fa fa-database bigger-110 ' style='color: orange; background-color: white; font-size: 15px;'></i> <span class='hidden'>Export to CSV</span>",
-                    "className": "btn btn-white btn-primary btn-bold",
-                    "button" :"<i class='btn btn-white btn-primary btn-bold'></i>"
-                },
-                {
-                    "extend": "excel",
-                    "text": "<i class='fa fa-file-excel-o bigger-110 ' style='color: darkgreen; font-size: 15px;'></i> <span class='hidden'>Export to Excel</span>",
-                    "className": "btn btn-white btn-primary btn-bold"
-                },
-                {
-                    "extend": "pdf",
-                    "text": "<i class='fa fa-file-pdf-o bigger-110 ' style='color: red; font-size: 15px;'></i> <span class='hidden'>Export to PDF</span>",
-                    "className": "btn btn-white btn-primary btn-bold"
-                },
-                {
-                    "extend": "print",
-                    "text": "<i class='fa fa-print bigger-110 ' style='color: grey; font-size: 15px;'></i> <span class='hidden'>Print</span>",
-                    "className": "btn btn-white btn-primary btn-bold",
-                    message:'hello'
-
-                }
+                    }
 
 
-                //'copy','csv' , 'excel', 'pdf', 'print'
-            ],
+                    //'copy','csv' , 'excel', 'pdf', 'print'
+                ],
 
-            paginate :false,
+                paginate: false,
 
-            bSort : false
-        } );
-    } );
+                bSort: false
+            });
+    });
 
 </script>
 </body>

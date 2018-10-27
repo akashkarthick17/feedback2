@@ -45,19 +45,8 @@
         String currentDept = (String) session.getAttribute("department");
         String currentSec = (String) session.getAttribute("section");
 
-        CRUDManager.surveyLog(rating,surveyList,s,currentSem,currentDept,currentSec);
-
-
-
-
-
-
-
-
-
-
-
-
+        String rollNo = (String) session.getAttribute("studentId");
+        CRUDManager.surveyLogTemp(rollNo, rating,surveyList,s,currentSem,currentDept,currentSec);
 
 
         int totalCount = (int) session.getAttribute("staffTotalCount");
@@ -65,6 +54,9 @@
 
 
         if(countTrack==totalCount){
+
+            CRUDManager.copyToFeedbackTable(rollNo);
+            CRUDManager.copyToSurveyTable(rollNo);
 
             session.setAttribute("staffCountTrack",1);
 

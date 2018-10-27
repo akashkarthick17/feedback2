@@ -56,6 +56,16 @@
 
     List<Rating> ratingList = CRUDManager.getFeedbackRating(year,semester,staffname,subcode,subname,sem,dept,sec);
 
+    String questionString = "";
+    String ratingString = "";
+    double ratingCount = 0.0;
+    for(Rating r : ratingList) {
+        questionString += r.getQuestion()+"%@! ";
+        ratingString += r.getRating()+"%@! ";
+        ratingCount  = ratingCount + r.getRating();
+    }
+
+    double totalRating = ratingCount/ratingList.size();
 
 //
 //    if(ratingList.isEmpty()){
@@ -124,6 +134,7 @@
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -224,7 +235,6 @@
                         <span>Survey Questions</span>
                     </a>
                 </li>
-                </li>
                 <li class="">
                     <a href="student_list.jsp"><i class="fa fa-user"></i>
                         <span>Students List</span>
@@ -255,9 +265,27 @@
         <section class="content">
 
 
+            <form target="_blank" action="download">
+                <input type="hidden" value="<%= questionString %>" name="questionString">
+                <input type="hidden" value="<%= ratingString %>" name="ratingString">
+                <input type="hidden" value="<%= totalRating %>" name="totalRating">
+                <input type="hidden" value="<%= subname %>" name="subjectTitle">
+                <input type="hidden" value="<%= subcode %>" name="subjectCode">
+                <input type="hidden" value="<%= staffname %>" name="staffName">
+                <input type="hidden" value="<%= dept %>" name="department">
+                <input type="hidden" value="<%= sem %>" name="semester">
+                <input type="hidden" value="<%= sec %>" name="section">
+                <input type="hidden" value="<%= year %>" name="year">
+                <button type="submit" class="btn btn-primary">Export as PDF</button>
+            </form>
+            <%--<a target="_blank" href="download">Export as PDF</a>--%>
+
             <div class="box" >
                 <div class="box-header" >
-                    <h3 class="box-title">Data Table With Full Features</h3>
+                    <h3 class="box-title"><bold style="font-weight: 700">Staff Name - </bold><%= staffname %></h3> &ensp; <br> <br>
+                    <h3 class="box-title"><bold style="font-weight: 700">Subject Name - </bold><%= subname %></h3>  &ensp;
+                    <h3 class="box-title"><bold style="font-weight: 700">Subject Code - </bold><%= subcode %></h3>  &ensp;
+
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
@@ -278,19 +306,19 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
+                        <%--<tr>--%>
 
 
-                        <td style="font-size: large; font-weight: 600"><%= subcode %></td>
-                        <td style="font-size: large; font-weight: 600"><%= subname%></td>
-                        <td style="font-size: large; font-weight: 600"><%= staffname%></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
+                        <%--<td style="font-size: large; font-weight: 600"><%= subcode %></td>--%>
+                        <%--<td style="font-size: large; font-weight: 600"><%= subname%></td>--%>
+                        <%--<td style="font-size: large; font-weight: 600"><%= staffname%></td>--%>
+                        <%--<td></td>--%>
+                        <%--<td></td>--%>
+                        <%--<td></td>--%>
+                        <%--<td></td>--%>
+                        <%--<td></td>--%>
+                        <%--<td></td>--%>
+                        <%--</tr>--%>
 
 
                         <%
@@ -299,9 +327,8 @@
 
 
                             DecimalFormat f = new DecimalFormat("##.00");
-                           // System.out.println(f.format(d));
 
-                        for(Rating r : ratingList){
+                        for(Rating r : ratingList) {
 
 
                         %>
@@ -403,47 +430,12 @@
 
 <script >
     $(document).ready(function() { $('#example').DataTable(
-        { dom: 'Bfrtip',
-            buttons: [
-
-                {
-                    "extend": "copy",
-                    "text": "<i class='fa fa-copy bigger-110 ' style='color: deeppink; font-size: 15px;'></i> <span class='hidden'>Copy to clipboard</span>",
-                    "className": "btn btn-white btn-primary btn-bold"
-                },
-
-                {
-                    "extend": "csv",
-                    "text": "<i class='fa fa-database bigger-110 ' style='color: orange; background-color: white; font-size: 15px;'></i> <span class='hidden'>Export to CSV</span>",
-                    "className": "btn btn-white btn-primary btn-bold",
-                    "button" :"<i class='btn btn-white btn-primary btn-bold'></i>"
-                },
-                {
-                    "extend": "excel",
-                    "text": "<i class='fa fa-file-excel-o bigger-110 ' style='color: darkgreen; font-size: 15px;'></i> <span class='hidden'>Export to Excel</span>",
-                    "className": "btn btn-white btn-primary btn-bold"
-                },
-                {
-                    "extend": "pdf",
-                    "text": "<i class='fa fa-file-pdf-o bigger-110 ' style='color: red; font-size: 15px;'></i> <span class='hidden'>Export to PDF</span>",
-                    "className": "btn btn-white btn-primary btn-bold"
-                },
-                {
-                    "extend": "print",
-                    "text": "<i class='fa fa-print bigger-110 ' style='color: grey; font-size: 15px;'></i> <span class='hidden'>Print</span>",
-                    "className": "btn btn-white btn-primary btn-bold",
-                    message:'hello'
-
-                }
-
-
-        //'copy','csv' , 'excel', 'pdf', 'print'
-            ],
-
+        {
             paginate :false,
 
             bSort : false
-        } );
+        }
+ );
     } );
 
 </script>

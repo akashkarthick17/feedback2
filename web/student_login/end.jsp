@@ -1,4 +1,10 @@
-<%
+<%@ page import="com.database.servlet.CRUDManager" %><%
+
+    String rollNo = (String) session.getAttribute("studentId");
+
+    CRUDManager.copyToFeedbackTable(rollNo);
+    CRUDManager.copyToSurveyTable(rollNo);
+
 
     session.removeAttribute("user");
     session.removeAttribute("staffCountTrack");
@@ -8,8 +14,7 @@
     session.removeAttribute("semester");
     session.removeAttribute("section");
     session.removeAttribute("staffList");
-
-
+    session.removeAttribute("studentId");
     session.invalidate();
 %>
 

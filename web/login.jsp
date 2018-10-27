@@ -12,34 +12,30 @@
 </head>
 <body>
 <%
-    if(request.getParameter("register")!=null) {
+    if (request.getParameter("register") != null) {
         String user = request.getParameter("register");
 
-        session.setAttribute("studentId",user);
+        session.setAttribute("studentId", user);
 
 
         CRUDManager.registerStudent(user);
 
 
-
         response.sendRedirect("student_login/dashboard.jsp");
-    }
-    else if(request.getParameter("pass")!=null){
+    } else if (request.getParameter("pass") != null) {
         String pass = request.getParameter("pass");
         if (pass.equals("rmdfeedback")) {
 
 
-            session.setAttribute("user","admin");
+            session.setAttribute("user", "admin");
 
             response.sendRedirect("admin_login/dashboard.jsp");
-        }
-        else {
+        } else {
 
 
             response.sendRedirect("index.jsp");
         }
-    }
-    else {
+    } else {
 
 
         response.sendRedirect("index.jsp");

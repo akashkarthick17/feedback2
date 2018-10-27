@@ -7,13 +7,11 @@
 
 <%
 
-    if(session.getAttribute("user")==null){
+    if (session.getAttribute("user") == null) {
 
         response.sendRedirect("../index.jsp");
 
-    }
-
-    else if(!session.getAttribute("user").equals("admin")){
+    } else if (!session.getAttribute("user").equals("admin")) {
 
         response.sendRedirect("../index.jsp");
 
@@ -21,10 +19,6 @@
 
 
 %>
-
-
-
-
 
 
 <%
@@ -36,23 +30,17 @@
     String section = request.getParameter("section");
 
 
-    List<Staff> staff = CRUDManager.getStaffList(year,dept,sem,section);
-    request.setAttribute("staffDetails",staff);
-    request.setAttribute("sYear",year);
+    List<Staff> staff = CRUDManager.getStaffList(year, dept, sem, section);
+    request.setAttribute("staffDetails", staff);
+    request.setAttribute("sYear", year);
 
-    String semester ="";
-    if(sem%2==0){
+    String semester = "";
+    if (sem % 2 == 0) {
 
-        semester="even";
+        semester = "even";
+    } else {
+        semester = "odd";
     }
-    else{
-        semester="odd";
-    }
-
-
-
-
-
 
 
 %>
@@ -86,40 +74,36 @@
     <![endif]-->
 
     <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
     <script type="application/javascript">
 
 
-        function fRating(year,semester,staffname, subcode,subname,sem,dept,section){
+        function fRating(year, semester, staffname, subcode, subname, sem, dept, section) {
 
 
 
             //alert("hello");
             //alert(year+" "+staffname+" "+subcode+" "+subname);
 
-            document.getElementById("year").value=year;
-            document.getElementById("subname").value=subname;
-            document.getElementById("subcode").value=subcode;
-            document.getElementById("staffname").value=staffname;
-            document.getElementById("semester").value=semester;
-            document.getElementById("sem").value=sem;
-            document.getElementById("dept").value=dept;
-            document.getElementById("sec").value=section;
+            document.getElementById("year").value = year;
+            document.getElementById("subname").value = subname;
+            document.getElementById("subcode").value = subcode;
+            document.getElementById("staffname").value = staffname;
+            document.getElementById("semester").value = semester;
+            document.getElementById("sem").value = sem;
+            document.getElementById("dept").value = dept;
+            document.getElementById("sec").value = section;
 
 
             document.getElementById("form").submit();
 
 
-
-
         }
 
 
-
     </script>
-
-
 
 
 </head>
@@ -223,7 +207,6 @@
                     </a>
                 </li>
 
-                </li>
                 <li class="">
                     <a href="student_list.jsp"><i class="fa fa-user"></i>
                         <span>Students List</span>
@@ -281,25 +264,24 @@
                             <th style="width: 40px">Label</th>
                         </tr>
                         <%
-                            int i=1; double ii=0.0; double res=0.0;
+                            int i = 1;
+                            double ii = 0.0;
+                            double res = 0.0;
                             DecimalFormat f = new DecimalFormat("##.00");
 
 
                         %>
-                        <C:forEach var="temp" items="${staffDetails}" >
+                        <C:forEach var="temp" items="${staffDetails}">
 
-                            <% ii=0.0;res=0.0; %>
+                            <% ii = 0.0;
+                                res = 0.0; %>
                             <tr>
 
                                 <%
-                                    List<Rating> ratingList = CRUDManager.getSurveyRating (year,semester,staff.get(i-1).getStaffName(),staff.get(i-1).getSubjectCode(),staff.get(i-1).getSubjectName(),sem,dept,section);
+                                    List<Rating> ratingList = CRUDManager.getSurveyRating(year, semester, staff.get(i - 1).getStaffName(), staff.get(i - 1).getSubjectCode(), staff.get(i - 1).getSubjectName(), sem, dept, section);
 
 
-                                    System.out.println("i : "+i);
-
-                                    for(Rating r : ratingList){
-
-
+                                    for (Rating r : ratingList) {
 
 
                                         ii = ii + r.getRating();
@@ -308,33 +290,29 @@
                                     }
 
 
-                                    res = ii/ratingList.size();
-
-
-
+                                    res = ii / ratingList.size();
 
 
                                 %>
 
 
-
-
-
-
                                 <td><%= i %>.</td>
-                                <td><a href="#" onclick="fRating('<%= request.getAttribute("sYear")%>','<%= semester %>','${temp.staffName}','${temp.subjectCode}','${temp.subjectName}',<%= sem %>,'<%= dept %>','<%= section %>')">${temp.staffName}</a></td>
+                                <td><a href="#"
+                                       onclick="fRating('<%= request.getAttribute("sYear")%>','<%= semester %>','${temp.staffName}','${temp.subjectCode}','${temp.subjectName}',<%= sem %>,'<%= dept %>','<%= section %>')">${temp.staffName}</a>
+                                </td>
                                 <td>${temp.subjectCode}</td>
                                 <td>${temp.subjectName}</td>
                                 <td>
                                     <div class="progress progress-xs progress-striped active">
-                                        <div class="progress-bar progress-bar-success" style="width: <%= res*10 %>%"></div>
+                                        <div class="progress-bar progress-bar-success"
+                                             style="width: <%= res*10 %>%"></div>
                                     </div>
                                 </td>
                                 <td><span class="badge bg-green"><%= f.format(res) %></span></td>
                             </tr>
 
                             <%
-                                i=i+1;
+                                i = i + 1;
                             %>
                         </C:forEach>
 
@@ -342,7 +320,6 @@
                 </div>
                 <!-- /.box-body -->
             </div>
-
 
 
         </section>

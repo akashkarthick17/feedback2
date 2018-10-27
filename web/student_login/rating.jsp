@@ -46,8 +46,8 @@
             String currentSec = (String) session.getAttribute("section");
 
 
-
-            CRUDManager.feedbackLog(rating,fbList,s, currentSem,currentDept,currentSec);
+            String rollNo =(String)session.getAttribute("studentId");
+            CRUDManager.feedbackLogTemp(rollNo,rating,fbList,s, currentSem,currentDept,currentSec);
 
        // }
 

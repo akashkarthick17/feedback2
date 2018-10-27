@@ -13,6 +13,25 @@
           <element id="library" level="project" name="commons-io-2.5-javadoc" />
           <element id="library" level="project" name="poi-3.16" />
           <element id="library" level="project" name="javax.jms" />
+          <element id="library" level="project" name="com.itextpdf:kernel:7.0.3" />
+          <element id="library" level="project" name="com.itextpdf:layout:7.0.3" />
+          <element id="library" level="project" name="Maven: com.itextpdf:forms:7.1.1" />
+          <element id="library" level="project" name="Maven: com.itextpdf:io:7.1.1" />
+          <element id="library" level="project" name="Maven: com.itextpdf:barcodes:7.1.1" />
+          <element id="library" level="project" name="Maven: com.itextpdf:font-asian:7.1.1" />
+          <element id="library" level="project" name="Maven: com.itextpdf:hyph:7.1.1" />
+          <element id="library" level="project" name="Maven: com.itextpdf:kernel:7.1.1" />
+          <element id="library" level="project" name="Maven: com.itextpdf:layout:7.1.1" />
+          <element id="library" level="project" name="Maven: com.itextpdf:pdfa:7.1.1" />
+          <element id="library" level="project" name="Maven: com.itextpdf:sign:7.1.1" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.13" />
+          <element id="library" level="project" name="com.itextpdf:font-asian:7.0.3" />
+          <element id="library" level="project" name="com.itextpdf:html2pdf:2.0.0" />
+          <element id="library" level="project" name="com.itextpdf:itext-xtra:5.5.10" />
+          <element id="library" level="project" name="com.itextpdf:itextg:5.5.10" />
+          <element id="library" level="project" name="com.itextpdf:itextpdf:5.5.13" />
+          <element id="module-output" name="feedback" />
+          <element id="library" level="project" name="com.itextpdf:pdfa:7.0.3" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="feedback/web/Web" />

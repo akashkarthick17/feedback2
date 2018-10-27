@@ -33,7 +33,10 @@
         <servlet-name>import</servlet-name>
         <servlet-class>com.database.servlet.ImportExcel</servlet-class>
     </servlet>
-
+    <servlet>
+        <servlet-name>download</servlet-name>
+        <servlet-class>com.database.servlet.DownloadFile</servlet-class>
+    </servlet>
 
 
 
@@ -59,6 +62,10 @@
     <servlet-mapping>
         <servlet-name>import</servlet-name>
         <url-pattern>/admin_login/import</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>download</servlet-name>
+        <url-pattern>/admin_login/download</url-pattern>
     </servlet-mapping>
 
 </web-app>

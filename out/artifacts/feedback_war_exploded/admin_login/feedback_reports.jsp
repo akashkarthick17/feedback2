@@ -3,13 +3,11 @@
 <%@ page import="com.database.servlet.CRUDManager" %>
 <%
 
-    if(session.getAttribute("user")==null){
+    if (session.getAttribute("user") == null) {
 
         response.sendRedirect("../index.jsp");
 
-    }
-
-    else if(!session.getAttribute("user").equals("admin")){
+    } else if (!session.getAttribute("user").equals("admin")) {
 
         response.sendRedirect("../index.jsp");
 
@@ -49,18 +47,16 @@
     <![endif]-->
 
     <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
 
     <style type="text/css">
-        body{
+        body {
 
         }
 
-        .box-padding{
-
-
-
+        .box-padding {
 
         }
 
@@ -141,10 +137,10 @@
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">MAIN NAVIGATION</li>
                 <li class="">
-                <a href="dashboard.jsp"><i class="fa fa-dashboard"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
+                    <a href="dashboard.jsp"><i class="fa fa-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
                 <li class="active">
                     <a href="feedback_reports.jsp"><i class="fa fa-line-chart"></i>
                         <span>Feedback Reports</span>
@@ -201,23 +197,25 @@
                     <div class="col-xs-5  col-xs-push-3">
                         <div class="form-group">
                             <label>Select Year</label>
-                            <select class="form-control select2" style="width: 100%; " name="year" data-placeholder="Please Select">
+                            <select class="form-control select2" style="width: 100%; " name="year"
+                                    data-placeholder="Please Select">
 
                                 <option value=""></option>
-                               <%
+                                <%
 
 
-                      List<Year> getYear = CRUDManager.fetch();
+                                    List<Year> getYear = CRUDManager.fetch();
 
-                      for(Year y :getYear){
-                    %>
+                                    for (Year y : getYear) {
+                                %>
 
-                    <option value="<%= y.getYear()%>"><%= y.getYear() %></option>
+                                <option value="<%= y.getYear()%>"><%= y.getYear() %>
+                                </option>
 
 
-                    <%
-                      }
-                    %>
+                                <%
+                                    }
+                                %>
 
                             </select>
                         </div>
@@ -228,76 +226,77 @@
 
 
                 <div class="row" style="margin-left: 30px;">
-                        <div class="col-xs-5  col-xs-push-3">
-                            <div class="form-group">
-                                <label>Select Department</label>
-                                <select class="form-control select2" style="width: 100%; "  name="dept" data-placeholder="Please Select">
+                    <div class="col-xs-5  col-xs-push-3">
+                        <div class="form-group">
+                            <label>Select Department</label>
+                            <select class="form-control select2" style="width: 100%; " name="dept"
+                                    data-placeholder="Please Select">
 
-                                    <option value=""></option>
-                                    <option value="CSE">CSE</option>
-                                    <option value="EEE">EEE</option>
-                                    <option value="ECE">ECE</option>
-                                    <option value="IT">IT</option>
-                                    <option value="EIE">EIE</option>
+                                <option value=""></option>
+                                <option value="CSE">CSE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="IT">IT</option>
+                                <option value="EIE">EIE</option>
 
-                                </select>
-                            </div>
+                            </select>
                         </div>
-
                     </div>
 
-                    <br><br>
-                    <div class="row" style="margin-left: 30px;">
-                        <div class="col-xs-5  center-block col-xs-push-3">
-                            <div class="form-group">
-                                <label>Select Semester</label>
-                                <select class="form-control select2 " style="width: 100%;"  name="sem" data-placeholder="Please Select">
+                </div>
 
-                                    <option value=""></option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                </select>
-                            </div>
+                <br><br>
+                <div class="row" style="margin-left: 30px;">
+                    <div class="col-xs-5  center-block col-xs-push-3">
+                        <div class="form-group">
+                            <label>Select Semester</label>
+                            <select class="form-control select2 " style="width: 100%;" name="sem"
+                                    data-placeholder="Please Select">
+
+                                <option value=""></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
                         </div>
-
-                    </div>
-                    <br><br>
-                    <div class="row" style="margin-left: 30px;">
-                        <div class="col-xs-5  r col-xs-push-3">
-                            <div class="form-group">
-                                <label>Select Section</label>
-                                <select class="form-control select2" style="width: 100%;" name="section" data-placeholder="Please Select">
-
-                                    <option value=""></option>
-                                    <option value="a">A</option>
-                                    <option value="b">B</option>
-                                    <option value="c">C</option>
-                                    <option value="d">D</option>
-                          >
-                                </select>
-                            </div>
-                        </div>
-
                     </div>
 
-        <br>
-        <br>
+                </div>
+                <br><br>
+                <div class="row" style="margin-left: 30px;">
+                    <div class="col-xs-5  r col-xs-push-3">
+                        <div class="form-group">
+                            <label>Select Section</label>
+                            <select class="form-control select2" style="width: 100%;" name="section"
+                                    data-placeholder="Please Select">
+
+                                <option value=""></option>
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                                >
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
 
 
+                <div>
 
-        <div>
+                    <button class="btn btn-primary btn-flat center-block">Submit</button>
 
-            <button class="btn btn-primary btn-flat center-block"  >Submit</button>
-
-        </div>
+                </div>
             </form>
-
 
 
         </div>
@@ -337,29 +336,29 @@
         $('.select2').select2()
 
         //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+        $('#datemask').inputmask('dd/mm/yyyy', {'placeholder': 'dd/mm/yyyy'})
         //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+        $('#datemask2').inputmask('mm/dd/yyyy', {'placeholder': 'mm/dd/yyyy'})
         //Money Euro
         $('[data-mask]').inputmask()
 
         //Date range picker
         $('#reservation').daterangepicker()
         //Date range picker with time picker
-        $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' })
+        $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'})
         //Date range as a button
         $('#daterange-btn').daterangepicker(
             {
-                ranges   : {
-                    'Today'       : [moment(), moment()],
-                    'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                    'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
                     'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                    'This Month'  : [moment().startOf('month'), moment().endOf('month')],
-                    'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
                 },
                 startDate: moment().subtract(29, 'days'),
-                endDate  : moment()
+                endDate: moment()
             },
             function (start, end) {
                 $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
@@ -374,17 +373,17 @@
         //iCheck for checkbox and radio inputs
         $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
             checkboxClass: 'icheckbox_minimal-blue',
-            radioClass   : 'iradio_minimal-blue'
+            radioClass: 'iradio_minimal-blue'
         })
         //Red color scheme for iCheck
         $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
             checkboxClass: 'icheckbox_minimal-red',
-            radioClass   : 'iradio_minimal-red'
+            radioClass: 'iradio_minimal-red'
         })
         //Flat red color scheme for iCheck
         $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
             checkboxClass: 'icheckbox_flat-green',
-            radioClass   : 'iradio_flat-green'
+            radioClass: 'iradio_flat-green'
         })
 
         //Colorpicker

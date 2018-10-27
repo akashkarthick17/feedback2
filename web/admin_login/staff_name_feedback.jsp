@@ -224,8 +224,6 @@
                         <span>Survey Questions</span>
                     </a>
                 </li>
-
-                </li>
                 <li class="">
                     <a href="student_list.jsp"><i class="fa fa-user"></i>
                         <span>Students List</span>
@@ -296,8 +294,6 @@
                             <%
                             List<Rating> ratingList = CRUDManager.getFeedbackRating(year,semester,staff.get(i-1).getStaffName(),staff.get(i-1).getSubjectCode(),staff.get(i-1).getSubjectName(),sem,dept,section);
 
-
-                                System.out.println("i : "+i);
 
                                 for(Rating r : ratingList){
 
