@@ -49,3 +49,5 @@ Temporary Items
 .apdisk
 .idea/workspace.xml
 out/artifacts/feedback_war_exploded/package-lock.json
+web/package-lock.json
+web/package.json
