@@ -290,6 +290,11 @@ public class CRUDManager {
 
                 // no. of feedback and survey questions
 
+                sql = "TRUNCATE reports_meta";
+                statement = connection.createStatement();
+                statement.executeUpdate(sql);
+
+
                 sql = "INSERT  INTO reports_meta VALUES (?,?,?,?)";
                 preparedStatement = connection.prepareStatement(sql);
                 preparedStatement.setInt(1, Integer.parseInt(pYear));

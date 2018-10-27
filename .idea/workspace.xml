@@ -7,90 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51dab323-f154-40d1-bca7-8e680bb4fb52" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/lib/io-7.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/lib/kernel-7.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/lib/layout-7.1.1.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/database/servlet/CRUDManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/database/servlet/DBConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/database/servlet/DashboardServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/database/servlet/ImportExcel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/database/servlet/Servlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/database/servlet/TestServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/database/servlet/UploadFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/list/servlet/CreateYear.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/list/servlet/FeedbackQuestion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/list/servlet/Rating.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/list/servlet/Staff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/list/servlet/StudentsList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/list/servlet/SurveyQuestion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/feedback/com/list/servlet/Year.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/database/servlet/CRUDManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/database/servlet/DBConnection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/database/servlet/DashboardServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/database/servlet/ImportExcel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/database/servlet/Servlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/database/servlet/TestServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/database/servlet/UploadFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/list/servlet/CreateYear.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/list/servlet/FeedbackQuestion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/list/servlet/Rating.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/list/servlet/Staff.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/list/servlet/StudentsList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/list/servlet/SurveyQuestion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/list/servlet/Year.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/WEB-INF/classes/com/database/servlet/CRUDManager.class" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/WEB-INF/classes/com/database/servlet/CRUDManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/WEB-INF/classes/com/database/servlet/DashboardServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/WEB-INF/classes/com/database/servlet/DashboardServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/feedback_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/feedback_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/javax_jms.xml" afterPath="$PROJECT_DIR$/.idea/libraries/javax_jms.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/WEB-INF/lib/com/database/servlet/CRUDManager.class" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/WEB-INF/lib/com/database/servlet/CRUDManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/database/servlet/CRUDManager.class" afterPath="$PROJECT_DIR$/target/classes/com/database/servlet/CRUDManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feedback.iml" afterPath="$PROJECT_DIR$/feedback.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/Gruntfile.js" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/META-INF/context.xml" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/META-INF/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/blnk.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/blnk.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/chart_and_pdf.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/chart_and_pdf.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/dashboard.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/dashboard.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/feedback_reports.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/feedback_reports.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/question_post.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/question_post.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/question_post_survey.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/question_post_survey.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/staff_feedback_rating.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/staff_feedback_rating.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/staff_name_feedback.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/staff_name_feedback.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/staff_name_survey.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/staff_name_survey.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/staff_survey_rating.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/staff_survey_rating.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/student_list.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/student_list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/survey_reports.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/admin_login/survey_reports.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/amcharts/amcharts.js" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/amcharts/amcharts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/amcharts/style.css" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/amcharts/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/starter.html" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/starter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/student_login/end.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/student_login/end.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/student_login/rating.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/student_login/rating.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/student_login/survey.jsp" afterPath="$PROJECT_DIR$/out/artifacts/feedback_war_exploded/student_login/survey.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Gruntfile.js" afterPath="$PROJECT_DIR$/web/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/META-INF/context.xml" afterPath="$PROJECT_DIR$/web/META-INF/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/blnk.jsp" afterPath="$PROJECT_DIR$/web/admin_login/blnk.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/chart_and_pdf.jsp" afterPath="$PROJECT_DIR$/web/admin_login/chart_and_pdf.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/dashboard.jsp" afterPath="$PROJECT_DIR$/web/admin_login/dashboard.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/feedback_reports.jsp" afterPath="$PROJECT_DIR$/web/admin_login/feedback_reports.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/question_post.jsp" afterPath="$PROJECT_DIR$/web/admin_login/question_post.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/question_post_survey.jsp" afterPath="$PROJECT_DIR$/web/admin_login/question_post_survey.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/staff_feedback_rating.jsp" afterPath="$PROJECT_DIR$/web/admin_login/staff_feedback_rating.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/staff_name_feedback.jsp" afterPath="$PROJECT_DIR$/web/admin_login/staff_name_feedback.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/staff_name_survey.jsp" afterPath="$PROJECT_DIR$/web/admin_login/staff_name_survey.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/staff_survey_rating.jsp" afterPath="$PROJECT_DIR$/web/admin_login/staff_survey_rating.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/student_list.jsp" afterPath="$PROJECT_DIR$/web/admin_login/student_list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_login/survey_reports.jsp" afterPath="$PROJECT_DIR$/web/admin_login/survey_reports.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/amcharts/amcharts.js" afterPath="$PROJECT_DIR$/web/amcharts/amcharts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/amcharts/style.css" afterPath="$PROJECT_DIR$/web/amcharts/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/starter.html" afterPath="$PROJECT_DIR$/web/starter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/student_login/end.jsp" afterPath="$PROJECT_DIR$/web/student_login/end.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/student_login/rating.jsp" afterPath="$PROJECT_DIR$/web/student_login/rating.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/student_login/survey.jsp" afterPath="$PROJECT_DIR$/web/student_login/survey.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/database/servlet/CRUDManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/database/servlet/CRUDManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -117,87 +39,94 @@
       <file leaf-file-name="CRUDManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/database/servlet/CRUDManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3363">
-              <caret line="1260" column="46" lean-forward="false" selection-start-line="1260" selection-start-column="31" selection-end-line="1260" selection-end-column="46" />
+            <state relative-caret-position="-32">
+              <caret line="290" column="33" lean-forward="false" selection-start-line="290" selection-start-column="33" selection-end-line="290" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1540638704732" expanded="true" signature="873:1097" ph="CREATE TABLE... YEAR_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="1254:1289" ph="INSERT INTO TABLE_MAP" />
-                <marker date="1540638704732" expanded="true" signature="2239:2265" ph="SELECT YEAR " />
-                <marker date="1540638704732" expanded="true" signature="3258:3274" ph="DROP TABLE y... " />
-                <marker date="1540638704732" expanded="true" signature="3400:3440" ph="DROP TABLE I... " />
-                <marker date="1540638704732" expanded="true" signature="3559:3600" ph="DROP TABLE I... " />
-                <marker date="1540638704732" expanded="true" signature="3719:3759" ph="DROP TABLE I... " />
-                <marker date="1540638704732" expanded="true" signature="3878:3919" ph="DROP TABLE I... " />
-                <marker date="1540638704732" expanded="true" signature="4077:4111" ph="DELETE FROM " />
-                <marker date="1540638704732" expanded="true" signature="5024:5080" ph="INSERT INTO YEAR_missingValue... " />
-                <marker date="1540638704732" expanded="true" signature="7328:7554" ph="CREATE TABLE... IF" />
-                <marker date="1540638704732" expanded="true" signature="7685:7910" ph="CREATE TABLE... IF" />
-                <marker date="1540638704732" expanded="true" signature="8083:8145" ph="INSERT INTO active_link" />
-                <marker date="1540638704732" expanded="true" signature="8593:8635" ph="INSERT INTO reports_meta" />
-                <marker date="1540638704732" expanded="true" signature="10991:11024" ph="SELECT * FRO... active_link" />
-                <marker date="1540638704732" expanded="true" signature="12111:12144" ph="SELECT * FRO... active_link" />
-                <marker date="1540638704732" expanded="true" signature="13261:13294" ph="SELECT * FRO... active_link" />
-                <marker date="1540638704732" expanded="true" signature="13546:13670" ph="SELECT * FRO... year_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="14963:15079" ph="SELECT * FRO... year_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="16364:16396" ph="SELECT * FRO... feedback_questions" />
-                <marker date="1540638704732" expanded="true" signature="17599:17629" ph="SELECT * FRO... survey_questions" />
-                <marker date="1540638704732" expanded="true" signature="19042:19075" ph="SELECT * FRO... active_link" />
-                <marker date="1540638704732" expanded="true" signature="19523:19604" ph="INSERT INTO fr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="21398:21591" ph="INSERT INTO fr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="23283:23316" ph="SELECT * FRO... active_link" />
-                <marker date="1540638704732" expanded="true" signature="23760:23841" ph="INSERT INTO sr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="25626:25819" ph="INSERT INTO sr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="27234:27267" ph="SELECT * FRO... active_link" />
-                <marker date="1540638704732" expanded="true" signature="27586:27649" ph="SELECT * FRO... temp_feedback" />
-                <marker date="1540638704732" expanded="true" signature="28436:28517" ph="INSERT INTO fr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="29200:29261" ph="DELETE FROM " />
-                <marker date="1540638704732" expanded="true" signature="30073:30106" ph="SELECT * FRO... active_link" />
-                <marker date="1540638704732" expanded="true" signature="30426:30487" ph="SELECT * FRO... temp_feedback" />
-                <marker date="1540638704732" expanded="true" signature="31274:31355" ph="INSERT INTO sr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="32038:32097" ph="DELETE FROM " />
-                <marker date="1540638704732" expanded="true" signature="33428:33696" ph="SELECT quest... fr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="33990:34262" ph="SELECT COUNT... fr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="34544:34816" ph="SELECT COUNT... fr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="35100:35372" ph="SELECT COUNT... fr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="35656:35928" ph="SELECT COUNT... fr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="36222:36494" ph="SELECT COUNT... fr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="38455:38725" ph="SELECT quest... sr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="39019:39293" ph="SELECT COUNT... sr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="39575:39849" ph="SELECT COUNT... sr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="40133:40407" ph="SELECT COUNT... sr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="40691:40965" ph="SELECT COUNT... sr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="41259:41533" ph="SELECT COUNT... sr_missingValue_missingValue" />
-                <marker date="1540638704732" expanded="true" signature="43006:43085" ph="SELECT feedb... reports_meta" />
-                <marker date="1540638704732" expanded="true" signature="44049:44126" ph="SELECT surve... reports_meta" />
-                <marker date="1540638704732" expanded="true" signature="45133:45208" ph="UPDATE surve... " />
-                <marker date="1540638704732" expanded="true" signature="46115:46167" ph="INSERT INTO survey_questions... " />
-                <marker date="1540638704732" expanded="true" signature="47047:47086" ph="DELETE FROM " />
-                <marker date="1540638704732" expanded="true" signature="47964:48041" ph="UPDATE feedb... " />
-                <marker date="1540638704732" expanded="true" signature="48952:49006" ph="INSERT INTO feedback_questions... " />
-                <marker date="1540638704732" expanded="true" signature="49890:49931" ph="DELETE FROM " />
-                <marker date="1540638704732" expanded="true" signature="50740:50793" ph="SELECT * FRO... active_students" />
-                <marker date="1540638704732" expanded="true" signature="51024:51084" ph="INSERT INTO active_students... " />
-                <marker date="1540638704732" expanded="true" signature="51311:51368" ph="SELECT * FRO... temp_feedback" />
-                <marker date="1540638704732" expanded="true" signature="51642:51701" ph="DELETE FROM " />
-                <marker date="1540638704732" expanded="true" signature="51942:51997" ph="SELECT * FRO... temp_feedback" />
-                <marker date="1540638704732" expanded="true" signature="52264:52321" ph="DELETE FROM " />
-                <marker date="1540638704732" expanded="true" signature="53276:53392" ph="UPDATE activ... " />
-                <marker date="1540638704732" expanded="true" signature="54247:54276" ph="SELECT * FRO... active_students" />
+                <marker date="1540649985203" expanded="true" signature="873:1097" ph="CREATE TABLE... YEAR_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="1254:1289" ph="INSERT INTO TABLE_MAP" />
+                <marker date="1540649985203" expanded="true" signature="2239:2265" ph="SELECT YEAR " />
+                <marker date="1540649985203" expanded="true" signature="3258:3274" ph="DROP TABLE y... " />
+                <marker date="1540649985203" expanded="true" signature="3400:3440" ph="DROP TABLE I... " />
+                <marker date="1540649985203" expanded="true" signature="3559:3600" ph="DROP TABLE I... " />
+                <marker date="1540649985203" expanded="true" signature="3719:3759" ph="DROP TABLE I... " />
+                <marker date="1540649985203" expanded="true" signature="3878:3919" ph="DROP TABLE I... " />
+                <marker date="1540649985203" expanded="true" signature="4077:4111" ph="DELETE FROM " />
+                <marker date="1540649985203" expanded="true" signature="5024:5080" ph="INSERT INTO YEAR_missingValue... " />
+                <marker date="1540649985203" expanded="true" signature="7328:7554" ph="CREATE TABLE... IF" />
+                <marker date="1540649985203" expanded="true" signature="7685:7910" ph="CREATE TABLE... IF" />
+                <marker date="1540649985203" expanded="true" signature="8083:8145" ph="INSERT INTO active_link" />
+                <marker date="1540649985203" expanded="true" signature="8746:8788" ph="INSERT INTO reports_meta" />
+                <marker date="1540649985203" expanded="true" signature="11144:11177" ph="SELECT * FRO... active_link" />
+                <marker date="1540649985203" expanded="true" signature="12264:12297" ph="SELECT * FRO... active_link" />
+                <marker date="1540649985203" expanded="true" signature="13414:13447" ph="SELECT * FRO... active_link" />
+                <marker date="1540649985203" expanded="true" signature="13699:13823" ph="SELECT * FRO... year_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="15116:15232" ph="SELECT * FRO... year_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="16517:16549" ph="SELECT * FRO... feedback_questions" />
+                <marker date="1540649985203" expanded="true" signature="17752:17782" ph="SELECT * FRO... survey_questions" />
+                <marker date="1540649985203" expanded="true" signature="19195:19228" ph="SELECT * FRO... active_link" />
+                <marker date="1540649985203" expanded="true" signature="19676:19757" ph="INSERT INTO fr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="21551:21744" ph="INSERT INTO fr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="23436:23469" ph="SELECT * FRO... active_link" />
+                <marker date="1540649985203" expanded="true" signature="23913:23994" ph="INSERT INTO sr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="25779:25972" ph="INSERT INTO sr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="27387:27420" ph="SELECT * FRO... active_link" />
+                <marker date="1540649985203" expanded="true" signature="27739:27802" ph="SELECT * FRO... temp_feedback" />
+                <marker date="1540649985203" expanded="true" signature="28589:28670" ph="INSERT INTO fr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="29353:29414" ph="DELETE FROM " />
+                <marker date="1540649985203" expanded="true" signature="30226:30259" ph="SELECT * FRO... active_link" />
+                <marker date="1540649985203" expanded="true" signature="30579:30640" ph="SELECT * FRO... temp_feedback" />
+                <marker date="1540649985203" expanded="true" signature="31427:31508" ph="INSERT INTO sr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="32191:32250" ph="DELETE FROM " />
+                <marker date="1540649985203" expanded="true" signature="33581:33849" ph="SELECT quest... fr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="34143:34415" ph="SELECT COUNT... fr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="34697:34969" ph="SELECT COUNT... fr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="35253:35525" ph="SELECT COUNT... fr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="35809:36081" ph="SELECT COUNT... fr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="36375:36647" ph="SELECT COUNT... fr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="38608:38878" ph="SELECT quest... sr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="39172:39446" ph="SELECT COUNT... sr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="39728:40002" ph="SELECT COUNT... sr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="40286:40560" ph="SELECT COUNT... sr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="40844:41118" ph="SELECT COUNT... sr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="41412:41686" ph="SELECT COUNT... sr_missingValue_missingValue" />
+                <marker date="1540649985203" expanded="true" signature="43159:43238" ph="SELECT feedb... reports_meta" />
+                <marker date="1540649985203" expanded="true" signature="44202:44279" ph="SELECT surve... reports_meta" />
+                <marker date="1540649985203" expanded="true" signature="45286:45361" ph="UPDATE surve... " />
+                <marker date="1540649985203" expanded="true" signature="46268:46320" ph="INSERT INTO survey_questions... " />
+                <marker date="1540649985203" expanded="true" signature="47200:47239" ph="DELETE FROM " />
+                <marker date="1540649985203" expanded="true" signature="48117:48194" ph="UPDATE feedb... " />
+                <marker date="1540649985203" expanded="true" signature="49105:49159" ph="INSERT INTO feedback_questions... " />
+                <marker date="1540649985203" expanded="true" signature="50043:50084" ph="DELETE FROM " />
+                <marker date="1540649985203" expanded="true" signature="50893:50946" ph="SELECT * FRO... active_students" />
+                <marker date="1540649985203" expanded="true" signature="51177:51237" ph="INSERT INTO active_students... " />
+                <marker date="1540649985203" expanded="true" signature="51464:51521" ph="SELECT * FRO... temp_feedback" />
+                <marker date="1540649985203" expanded="true" signature="51795:51854" ph="DELETE FROM " />
+                <marker date="1540649985203" expanded="true" signature="52095:52150" ph="SELECT * FRO... temp_feedback" />
+                <marker date="1540649985203" expanded="true" signature="52417:52474" ph="DELETE FROM " />
+                <marker date="1540649985203" expanded="true" signature="53429:53545" ph="UPDATE activ... " />
+                <marker date="1540649985203" expanded="true" signature="54400:54429" ph="SELECT * FRO... active_students" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/admin_login/dashboard.jsp">
+      <file leaf-file-name=".project" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.project">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7670">
-              <caret line="148" column="69" lean-forward="false" selection-start-line="148" selection-start-column="69" selection-end-line="148" selection-end-column="69" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#23700#23707#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,18 +134,8 @@
       <file leaf-file-name="feedback_reports.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/admin_login/feedback_reports.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
+            <state relative-caret-position="203">
               <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/database/servlet/DBConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -225,26 +144,21 @@
       <file leaf-file-name="DashboardServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/database/servlet/DashboardServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
+            <state relative-caret-position="1479">
               <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="staff_feedback_rating.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="staff_feedback_rating.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/admin_login/staff_feedback_rating.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-              <folding>
-                <element signature="n#style#0;n#bold#0;n#h3#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#10022#10028#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#bold#0;n#h3#1;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#10155#10161#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#bold#0;n#h3#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#10278#10284#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="29">
+              <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -252,7 +166,7 @@
       <file leaf-file-name="staff_name_survey.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/admin_login/staff_name_survey.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="1305">
               <caret line="45" column="2" lean-forward="false" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
               <folding />
             </state>
@@ -262,9 +176,11 @@
       <file leaf-file-name="DownloadFile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/database/servlet/DownloadFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="186" column="11" lean-forward="true" selection-start-line="186" selection-start-column="11" selection-end-line="186" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="4495">
+              <caret line="186" column="11" lean-forward="false" selection-start-line="186" selection-start-column="11" selection-end-line="186" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -272,7 +188,7 @@
       <file leaf-file-name="staff_name_feedback.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/admin_login/staff_name_feedback.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="6525">
               <caret line="225" column="21" lean-forward="false" selection-start-line="225" selection-start-column="21" selection-end-line="225" selection-end-column="21" />
               <folding />
             </state>
@@ -282,16 +198,9 @@
       <file leaf-file-name="staff_survey_rating.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/admin_login/staff_survey_rating.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="254" column="0" lean-forward="true" selection-start-line="251" selection-start-column="19" selection-end-line="254" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#bold#0;n#h3#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#9386#9392#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#bold#0;n#h3#1;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#9519#9525#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#bold#0;n#h3#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#9642#9648#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="7366">
+              <caret line="254" column="0" lean-forward="false" selection-start-line="251" selection-start-column="19" selection-end-line="254" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -312,14 +221,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>META</find>
-      <find>META-INF</find>
-      <find>dataSource.getConnection();</find>
-      <find>catch (SQLException</find>
-      <find>DBConnection.ConnectDatabase();</find>
-      <find>DBConnection.database();</find>
-      <find>dataSource</find>
-      <find>sYear</find>
       <find>Feedbacklog</find>
       <find>semester</find>
       <find>sem</find>
@@ -342,6 +243,14 @@
       <find>publish</find>
       <find>getServletContext</find>
       <find>export as</find>
+      <find>r</find>
+      <find>re</find>
+      <find>reports</find>
+      <find>reports_</find>
+      <find>reports_m</find>
+      <find>reports_me</find>
+      <find>reports_met</find>
+      <find>reports_meta</find>
     </findStrings>
     <replaceStrings>
       <replace>../</replace>
@@ -384,7 +293,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/student_login/select_dept.jsp" />
         <option value="$PROJECT_DIR$/src/com/list/servlet/Year.java" />
         <option value="$PROJECT_DIR$/src/com/list/servlet/FeedbackQuestion.java" />
         <option value="$PROJECT_DIR$/src/com/list/servlet/SurveyQuestion.java" />
@@ -430,11 +338,12 @@
         <option value="$PROJECT_DIR$/web/student_login/survey.jsp" />
         <option value="$PROJECT_DIR$/web/admin_login/dashboard.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/database/servlet/DashboardServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/database/servlet/CRUDManager.java" />
         <option value="$PROJECT_DIR$/web/admin_login/staff_name_survey.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/database/servlet/DownloadFile.java" />
         <option value="$PROJECT_DIR$/web/admin_login/staff_survey_rating.jsp" />
         <option value="$PROJECT_DIR$/web/admin_login/staff_feedback_rating.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/database/servlet/CRUDManager.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -479,9 +388,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -518,6 +425,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -1191,15 +1100,15 @@
       <workItem from="1510668284974" duration="12246000" />
       <workItem from="1522936734272" duration="43435000" />
       <workItem from="1540631482809" duration="13876000" />
+      <workItem from="1540649487392" duration="1173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351787000" />
+    <option name="totallyTimeSpent" value="352960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1222,9 +1131,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37938845" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37938845" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23254564" sideWeight="0.75386316" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23576799" sideWeight="0.75386316" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20208333" sideWeight="0.24613686" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1263,20 +1172,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/admin_login/survey_reports.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="271" column="52" lean-forward="false" selection-start-line="271" selection-start-column="52" selection-end-line="271" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin_login/student_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2535">
-          <caret line="169" column="24" lean-forward="false" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/feedback_sr_2018_odd.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1288,7 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="27" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1338,7 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="168" column="33" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1346,7 +1239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4669">
           <caret line="161" column="68" lean-forward="true" selection-start-line="161" selection-start-column="68" selection-end-line="161" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1375,7 +1267,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1390,7 +1281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,7 +1288,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1436,7 +1325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1511,7 +1399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2262">
           <caret line="78" column="38" lean-forward="false" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1519,7 +1406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1334">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1535,7 +1421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5920">
           <caret line="214" column="1" lean-forward="true" selection-start-line="214" selection-start-column="1" selection-end-line="214" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1559,7 +1444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1573,99 +1457,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin_login/dashboard.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7670">
+        <state relative-caret-position="4292">
           <caret line="148" column="69" lean-forward="false" selection-start-line="148" selection-start-column="69" selection-end-line="148" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#23700#23707#1#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin_login/feedback_reports.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
+        <state relative-caret-position="203">
           <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/database/servlet/CRUDManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3363">
-          <caret line="1260" column="46" lean-forward="false" selection-start-line="1260" selection-start-column="31" selection-end-line="1260" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1540638704732" expanded="true" signature="873:1097" ph="CREATE TABLE... YEAR_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="1254:1289" ph="INSERT INTO TABLE_MAP" />
-            <marker date="1540638704732" expanded="true" signature="2239:2265" ph="SELECT YEAR " />
-            <marker date="1540638704732" expanded="true" signature="3258:3274" ph="DROP TABLE y... " />
-            <marker date="1540638704732" expanded="true" signature="3400:3440" ph="DROP TABLE I... " />
-            <marker date="1540638704732" expanded="true" signature="3559:3600" ph="DROP TABLE I... " />
-            <marker date="1540638704732" expanded="true" signature="3719:3759" ph="DROP TABLE I... " />
-            <marker date="1540638704732" expanded="true" signature="3878:3919" ph="DROP TABLE I... " />
-            <marker date="1540638704732" expanded="true" signature="4077:4111" ph="DELETE FROM " />
-            <marker date="1540638704732" expanded="true" signature="5024:5080" ph="INSERT INTO YEAR_missingValue... " />
-            <marker date="1540638704732" expanded="true" signature="7328:7554" ph="CREATE TABLE... IF" />
-            <marker date="1540638704732" expanded="true" signature="7685:7910" ph="CREATE TABLE... IF" />
-            <marker date="1540638704732" expanded="true" signature="8083:8145" ph="INSERT INTO active_link" />
-            <marker date="1540638704732" expanded="true" signature="8593:8635" ph="INSERT INTO reports_meta" />
-            <marker date="1540638704732" expanded="true" signature="10991:11024" ph="SELECT * FRO... active_link" />
-            <marker date="1540638704732" expanded="true" signature="12111:12144" ph="SELECT * FRO... active_link" />
-            <marker date="1540638704732" expanded="true" signature="13261:13294" ph="SELECT * FRO... active_link" />
-            <marker date="1540638704732" expanded="true" signature="13546:13670" ph="SELECT * FRO... year_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="14963:15079" ph="SELECT * FRO... year_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="16364:16396" ph="SELECT * FRO... feedback_questions" />
-            <marker date="1540638704732" expanded="true" signature="17599:17629" ph="SELECT * FRO... survey_questions" />
-            <marker date="1540638704732" expanded="true" signature="19042:19075" ph="SELECT * FRO... active_link" />
-            <marker date="1540638704732" expanded="true" signature="19523:19604" ph="INSERT INTO fr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="21398:21591" ph="INSERT INTO fr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="23283:23316" ph="SELECT * FRO... active_link" />
-            <marker date="1540638704732" expanded="true" signature="23760:23841" ph="INSERT INTO sr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="25626:25819" ph="INSERT INTO sr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="27234:27267" ph="SELECT * FRO... active_link" />
-            <marker date="1540638704732" expanded="true" signature="27586:27649" ph="SELECT * FRO... temp_feedback" />
-            <marker date="1540638704732" expanded="true" signature="28436:28517" ph="INSERT INTO fr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="29200:29261" ph="DELETE FROM " />
-            <marker date="1540638704732" expanded="true" signature="30073:30106" ph="SELECT * FRO... active_link" />
-            <marker date="1540638704732" expanded="true" signature="30426:30487" ph="SELECT * FRO... temp_feedback" />
-            <marker date="1540638704732" expanded="true" signature="31274:31355" ph="INSERT INTO sr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="32038:32097" ph="DELETE FROM " />
-            <marker date="1540638704732" expanded="true" signature="33428:33696" ph="SELECT quest... fr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="33990:34262" ph="SELECT COUNT... fr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="34544:34816" ph="SELECT COUNT... fr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="35100:35372" ph="SELECT COUNT... fr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="35656:35928" ph="SELECT COUNT... fr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="36222:36494" ph="SELECT COUNT... fr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="38455:38725" ph="SELECT quest... sr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="39019:39293" ph="SELECT COUNT... sr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="39575:39849" ph="SELECT COUNT... sr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="40133:40407" ph="SELECT COUNT... sr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="40691:40965" ph="SELECT COUNT... sr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="41259:41533" ph="SELECT COUNT... sr_missingValue_missingValue" />
-            <marker date="1540638704732" expanded="true" signature="43006:43085" ph="SELECT feedb... reports_meta" />
-            <marker date="1540638704732" expanded="true" signature="44049:44126" ph="SELECT surve... reports_meta" />
-            <marker date="1540638704732" expanded="true" signature="45133:45208" ph="UPDATE surve... " />
-            <marker date="1540638704732" expanded="true" signature="46115:46167" ph="INSERT INTO survey_questions... " />
-            <marker date="1540638704732" expanded="true" signature="47047:47086" ph="DELETE FROM " />
-            <marker date="1540638704732" expanded="true" signature="47964:48041" ph="UPDATE feedb... " />
-            <marker date="1540638704732" expanded="true" signature="48952:49006" ph="INSERT INTO feedback_questions... " />
-            <marker date="1540638704732" expanded="true" signature="49890:49931" ph="DELETE FROM " />
-            <marker date="1540638704732" expanded="true" signature="50740:50793" ph="SELECT * FRO... active_students" />
-            <marker date="1540638704732" expanded="true" signature="51024:51084" ph="INSERT INTO active_students... " />
-            <marker date="1540638704732" expanded="true" signature="51311:51368" ph="SELECT * FRO... temp_feedback" />
-            <marker date="1540638704732" expanded="true" signature="51642:51701" ph="DELETE FROM " />
-            <marker date="1540638704732" expanded="true" signature="51942:51997" ph="SELECT * FRO... temp_feedback" />
-            <marker date="1540638704732" expanded="true" signature="52264:52321" ph="DELETE FROM " />
-            <marker date="1540638704732" expanded="true" signature="53276:53392" ph="UPDATE activ... " />
-            <marker date="1540638704732" expanded="true" signature="54247:54276" ph="SELECT * FRO... active_students" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/admin_login/staff_name_survey.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="1305">
           <caret line="45" column="2" lean-forward="false" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
           <folding />
         </state>
@@ -1673,15 +1481,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/database/servlet/DashboardServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
+        <state relative-caret-position="1479">
           <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin_login/staff_name_feedback.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
+        <state relative-caret-position="6525">
           <caret line="225" column="21" lean-forward="false" selection-start-line="225" selection-start-column="21" selection-end-line="225" selection-end-column="21" />
           <folding />
         </state>
@@ -1689,39 +1499,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/database/servlet/DownloadFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="186" column="11" lean-forward="true" selection-start-line="186" selection-start-column="11" selection-end-line="186" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="4495">
+          <caret line="186" column="11" lean-forward="false" selection-start-line="186" selection-start-column="11" selection-end-line="186" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin_login/staff_survey_rating.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="254" column="0" lean-forward="true" selection-start-line="251" selection-start-column="19" selection-end-line="254" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#bold#0;n#h3#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9386#9392#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#bold#0;n#h3#1;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9519#9525#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#bold#0;n#h3#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9642#9648#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="7366">
+          <caret line="254" column="0" lean-forward="false" selection-start-line="251" selection-start-column="19" selection-end-line="254" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin_login/staff_feedback_rating.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="29">
+          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/database/servlet/CRUDManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="290" column="33" lean-forward="false" selection-start-line="290" selection-start-column="33" selection-end-line="290" selection-end-column="33" />
           <folding>
-            <element signature="n#style#0;n#bold#0;n#h3#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#10022#10028#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#bold#0;n#h3#1;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#10155#10161#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#bold#0;n#h3#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#10278#10284#0#HTML" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1540649985203" expanded="true" signature="873:1097" ph="CREATE TABLE... YEAR_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="1254:1289" ph="INSERT INTO TABLE_MAP" />
+            <marker date="1540649985203" expanded="true" signature="2239:2265" ph="SELECT YEAR " />
+            <marker date="1540649985203" expanded="true" signature="3258:3274" ph="DROP TABLE y... " />
+            <marker date="1540649985203" expanded="true" signature="3400:3440" ph="DROP TABLE I... " />
+            <marker date="1540649985203" expanded="true" signature="3559:3600" ph="DROP TABLE I... " />
+            <marker date="1540649985203" expanded="true" signature="3719:3759" ph="DROP TABLE I... " />
+            <marker date="1540649985203" expanded="true" signature="3878:3919" ph="DROP TABLE I... " />
+            <marker date="1540649985203" expanded="true" signature="4077:4111" ph="DELETE FROM " />
+            <marker date="1540649985203" expanded="true" signature="5024:5080" ph="INSERT INTO YEAR_missingValue... " />
+            <marker date="1540649985203" expanded="true" signature="7328:7554" ph="CREATE TABLE... IF" />
+            <marker date="1540649985203" expanded="true" signature="7685:7910" ph="CREATE TABLE... IF" />
+            <marker date="1540649985203" expanded="true" signature="8083:8145" ph="INSERT INTO active_link" />
+            <marker date="1540649985203" expanded="true" signature="8746:8788" ph="INSERT INTO reports_meta" />
+            <marker date="1540649985203" expanded="true" signature="11144:11177" ph="SELECT * FRO... active_link" />
+            <marker date="1540649985203" expanded="true" signature="12264:12297" ph="SELECT * FRO... active_link" />
+            <marker date="1540649985203" expanded="true" signature="13414:13447" ph="SELECT * FRO... active_link" />
+            <marker date="1540649985203" expanded="true" signature="13699:13823" ph="SELECT * FRO... year_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="15116:15232" ph="SELECT * FRO... year_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="16517:16549" ph="SELECT * FRO... feedback_questions" />
+            <marker date="1540649985203" expanded="true" signature="17752:17782" ph="SELECT * FRO... survey_questions" />
+            <marker date="1540649985203" expanded="true" signature="19195:19228" ph="SELECT * FRO... active_link" />
+            <marker date="1540649985203" expanded="true" signature="19676:19757" ph="INSERT INTO fr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="21551:21744" ph="INSERT INTO fr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="23436:23469" ph="SELECT * FRO... active_link" />
+            <marker date="1540649985203" expanded="true" signature="23913:23994" ph="INSERT INTO sr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="25779:25972" ph="INSERT INTO sr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="27387:27420" ph="SELECT * FRO... active_link" />
+            <marker date="1540649985203" expanded="true" signature="27739:27802" ph="SELECT * FRO... temp_feedback" />
+            <marker date="1540649985203" expanded="true" signature="28589:28670" ph="INSERT INTO fr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="29353:29414" ph="DELETE FROM " />
+            <marker date="1540649985203" expanded="true" signature="30226:30259" ph="SELECT * FRO... active_link" />
+            <marker date="1540649985203" expanded="true" signature="30579:30640" ph="SELECT * FRO... temp_feedback" />
+            <marker date="1540649985203" expanded="true" signature="31427:31508" ph="INSERT INTO sr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="32191:32250" ph="DELETE FROM " />
+            <marker date="1540649985203" expanded="true" signature="33581:33849" ph="SELECT quest... fr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="34143:34415" ph="SELECT COUNT... fr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="34697:34969" ph="SELECT COUNT... fr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="35253:35525" ph="SELECT COUNT... fr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="35809:36081" ph="SELECT COUNT... fr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="36375:36647" ph="SELECT COUNT... fr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="38608:38878" ph="SELECT quest... sr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="39172:39446" ph="SELECT COUNT... sr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="39728:40002" ph="SELECT COUNT... sr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="40286:40560" ph="SELECT COUNT... sr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="40844:41118" ph="SELECT COUNT... sr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="41412:41686" ph="SELECT COUNT... sr_missingValue_missingValue" />
+            <marker date="1540649985203" expanded="true" signature="43159:43238" ph="SELECT feedb... reports_meta" />
+            <marker date="1540649985203" expanded="true" signature="44202:44279" ph="SELECT surve... reports_meta" />
+            <marker date="1540649985203" expanded="true" signature="45286:45361" ph="UPDATE surve... " />
+            <marker date="1540649985203" expanded="true" signature="46268:46320" ph="INSERT INTO survey_questions... " />
+            <marker date="1540649985203" expanded="true" signature="47200:47239" ph="DELETE FROM " />
+            <marker date="1540649985203" expanded="true" signature="48117:48194" ph="UPDATE feedb... " />
+            <marker date="1540649985203" expanded="true" signature="49105:49159" ph="INSERT INTO feedback_questions... " />
+            <marker date="1540649985203" expanded="true" signature="50043:50084" ph="DELETE FROM " />
+            <marker date="1540649985203" expanded="true" signature="50893:50946" ph="SELECT * FRO... active_students" />
+            <marker date="1540649985203" expanded="true" signature="51177:51237" ph="INSERT INTO active_students... " />
+            <marker date="1540649985203" expanded="true" signature="51464:51521" ph="SELECT * FRO... temp_feedback" />
+            <marker date="1540649985203" expanded="true" signature="51795:51854" ph="DELETE FROM " />
+            <marker date="1540649985203" expanded="true" signature="52095:52150" ph="SELECT * FRO... temp_feedback" />
+            <marker date="1540649985203" expanded="true" signature="52417:52474" ph="DELETE FROM " />
+            <marker date="1540649985203" expanded="true" signature="53429:53545" ph="UPDATE activ... " />
+            <marker date="1540649985203" expanded="true" signature="54400:54429" ph="SELECT * FRO... active_students" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
