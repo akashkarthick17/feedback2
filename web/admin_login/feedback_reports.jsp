@@ -10,7 +10,6 @@
     } else if (!session.getAttribute("user").equals("admin")) {
 
         response.sendRedirect("../index.jsp");
-
     }
 
 
